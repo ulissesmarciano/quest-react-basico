@@ -1,0 +1,17 @@
+.paragraphs-container {
+  max-width: 500px;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.paragraphs-title {
+  margin-bottom: 8px;
+  font-size: 22px;
+}

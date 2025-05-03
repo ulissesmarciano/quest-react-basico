@@ -1,0 +1,21 @@
+.btn {
+  cursor: pointer;
+  padding: 6px;
+
+  border: none;
+  border-radius: 2px;
+  background-color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #fff;
+    color: cornflowerblue;
+  }
+}

@@ -1,0 +1,15 @@
+.paragraph-container {
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.changed {
+  color: blueviolet;
+  text-transform: uppercase;
+}
