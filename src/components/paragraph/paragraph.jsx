@@ -3,10 +3,11 @@ import Button from "../button/button";
 import "./paragraph.css";
 
 const getClasseTexto = (element) => {
-  return element.classList.contains("paragraph-container")
+  return element.classList.contains("changed")
     ? "paragraph-container"
     : "paragraph-container changed";
 };
+
 
 const handleParagraphColor = (event) => {
   const newClass = getClasseTexto(event.currentTarget.previousElementSibling);
