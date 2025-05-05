@@ -1,22 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../button/button";
 import "./paragraph.css";
 
-const getClasseTexto = (element) => {
-  return element.classList.contains("changed")
-    ? "paragraph-container"
-    : "paragraph-container changed";
-};
-
-
-const handleParagraphColor = (event) => {
-  const newClass = getClasseTexto(event.currentTarget.previousElementSibling);
-  event.currentTarget.previousElementSibling.className = newClass;
-};
-
 const Paragraph = ({ text }) => {
+  const [textStyle, setTextStyle] = useState(false);
+
+  const handleParagraphColor = () => {
+    setTextStyle(!textStyle)
+  };
+
   return (
-    <div className={"paragraph-container"}>
+    <div className={textStyle ? "paragraph-container changed" : "paragraph-container"}>
       <p>{text}</p>
       <Button changeParagraphColor={handleParagraphColor} />
       <hr />
